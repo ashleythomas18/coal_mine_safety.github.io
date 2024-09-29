@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift Handover & Safety Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Shift Handover & Safety Management System</h1>
+        <div class="notification">
+            <p>⚠️ Urgent: Equipment failure in Section C | Gas leak detected in Section B</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>Previous Shift Overview</h2>
+            <div class="shift-details">
+                <h3>Activities:</h3>
+                <ul>
+                    <li>Excavation in Section A completed</li>
+                    <li>Routine maintenance performed on drill machine</li>
+                    <li>Safety checks completed in all areas</li>
+                </ul>
+
+                <h3>Key Issues:</h3>
+                <ul>
+                    <li>Minor gas leak detected in Section B</li>
+                    <li>Equipment malfunction in Section C</li>
+                </ul>
+
+                <h3>Safety Alerts:</h3>
+                <p>Gas leak in Section B - Monitor and assess risk</p>
+            </div>
+        </section>
+
+        <!-- New Section for Safety Management Plan (SMP) -->
+        <section class="smp-section">
+            <h2>Safety Management Plan (SMP)</h2>
+            <form id="smp-form">
+                <label for="hazard">Hazard Identification:</label>
+                <input type="text" id="hazard" name="hazard" placeholder="Describe the hazard...">
+
+                <label for="control">Control Measures:</label>
+                <textarea id="control" name="control" placeholder="List control measures..."></textarea>
+
+                <label for="monitoring">Monitoring Mechanism:</label>
+                <textarea id="monitoring" name="monitoring" placeholder="Describe how the hazard is monitored..."></textarea>
+
+                <label for="responsibility">Assign Responsibility:</label>
+                <input type="text" id="responsibility" name="responsibility" placeholder="Assign responsible person...">
+
+                <button type="submit">Submit SMP</button>
+            </form>
+        </section>
+
+        <section class="shift-form">
+            <h2>Current Shift Log</h2>
+            <form id="shift-log-form">
+                <label for="tasks">Task Summary:</label>
+                <textarea id="tasks" name="tasks" placeholder="Describe completed tasks..."></textarea>
+
+                <label for="issues">Report Issues:</label>
+                <textarea id="issues" name="issues" placeholder="Describe any issues..."></textarea>
+
+                <label for="safety">Safety Concerns:</label>
+                <textarea id="safety" name="safety" placeholder="Report safety concerns..."></textarea>
+
+                <label for="file">Attach File:</label>
+                <input type="file" id="file" name="file">
+
+                <button type="submit">Submit Log</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shift Handover & Safety Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
